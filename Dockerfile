@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt update \
     && apt install -y \
-        php-fpm php-cli php-mcrypt php-json php-intl php-mysql php-pgsql php-curl php-gd php-soap php-xml php-apcu \
+        php-fpm php-cli php-mcrypt php-json php-intl php-mysql php-pgsql php-curl php-gd php-soap php-xml php-apcu php-zip \
         php-mbstring php-xdebug apache2 git zip unzip
 
 RUN apt autoremove -y && rm -rf /var/lib/apt/lists/*
